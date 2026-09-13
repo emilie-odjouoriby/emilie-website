@@ -1,26 +1,38 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/*
+ * Design tokens — charte graphique Émilie Odjouoriby (CLAUDE.md §3.1/§3.2).
+ * Contraste WCAG AA vérifié (voir résumé de phase) :
+ * - encre sur beige-clair/blanc : ~15:1 (excellent)
+ * - encre sur corail : ~8:1 (OK) — corail sur blanc : ~2.1:1 (KO, ne jamais mettre
+ *   du texte blanc directement sur corail, utiliser le texte encre à la place)
+ * - doré en texte : ~3:1 max sur blanc, ~2.6:1 sur beige-clair — réserver le doré
+ *   aux grands titres/labels, jamais au texte courant, et jamais sur beige-clair
+ * - jaune-soleil et bleu : jamais utilisés comme couleur de texte (voir §3.1)
+ */
+@theme {
+  --color-jaune-soleil: #fff27c;
+  --color-corail: #f19c7c;
+  --color-beige-clair: #ffeed1;
+  --color-dore: #a39376;
+  --color-bleu: #0cc0df;
+  --color-encre: #1f1a15;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-signature: var(--font-signature);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 2px 12px rgb(31 26 21 / 0.06);
+  --shadow-md: 0 8px 24px rgb(31 26 21 / 0.1);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: var(--color-encre);
+  font-family: var(--font-sans);
 }
