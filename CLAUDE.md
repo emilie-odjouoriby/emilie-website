@@ -65,14 +65,14 @@ Points d'attention spécifiques à ce mockup :
 
 ### 3.1 Palette de couleurs (source : `Charte_graphique_Emilie.pdf`)
 
-| Nom | Hex | Usage recommandé |
-|---|---|---|
-| Jaune Soleil | `#FFF27C` | Touche ponctuelle (badge, souligné, micro-interaction) — **jamais en texte**, contraste insuffisant |
-| Corail | `#F19C7C` | Couleur d'accent principale (CTA secondaires, liens actifs, icônes, dégradés) |
-| Beige clair | `#FFEED1` | Fond de section alternatif, cartes |
-| Doré | `#A39376` | Texte adouci, bordures, séparateurs, fond sombre alternatif |
-| Bleu | `#0CC0DF` | **Touche brève uniquement**, sur demande explicite de la cliente — jamais dominant, jamais pour de grandes surfaces. À utiliser avec parcimonie (un détail d'icône, un hover, un accent graphique isolé) et seulement là où il ne casse pas l'harmonie chaude du reste de la palette. **En cas de doute sur un emplacement, demander plutôt que de l'ajouter par défaut.**
-| Encre | `#1F1A15` | Texte principal — noir chaud, validé avec la cliente/le développeur (non fourni explicitement dans la charte d'origine) |
+| Nom          | Hex       | Usage recommandé                                                                                                                                                                                                                                                                                                                                                           |
+| ------------ | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Jaune Soleil | `#FFF27C` | Touche ponctuelle (badge, souligné, micro-interaction) — **jamais en texte**, contraste insuffisant                                                                                                                                                                                                                                                                        |
+| Corail       | `#F19C7C` | Couleur d'accent principale (CTA secondaires, liens actifs, icônes, dégradés)                                                                                                                                                                                                                                                                                              |
+| Beige clair  | `#FFEED1` | Fond de section alternatif, cartes                                                                                                                                                                                                                                                                                                                                         |
+| Doré         | `#A39376` | Texte adouci, bordures, séparateurs, fond sombre alternatif                                                                                                                                                                                                                                                                                                                |
+| Bleu         | `#0CC0DF` | **Touche brève uniquement**, sur demande explicite de la cliente — jamais dominant, jamais pour de grandes surfaces. À utiliser avec parcimonie (un détail d'icône, un hover, un accent graphique isolé) et seulement là où il ne casse pas l'harmonie chaude du reste de la palette. **En cas de doute sur un emplacement, demander plutôt que de l'ajouter par défaut.** |
+| Encre        | `#1F1A15` | Texte principal — noir chaud, validé avec la cliente/le développeur (non fourni explicitement dans la charte d'origine)                                                                                                                                                                                                                                                    |
 
 **Règle d'or : le site reste sobre.** La demande de la cliente ("pas trop coloré") signifie une utilisation **dominante de beige clair / blanc cassé + doré**, avec corail comme accent principal, jaune soleil en touche rare, et bleu en touche exceptionnelle. Ne jamais couvrir de grandes surfaces en jaune ou en bleu.
 
@@ -80,11 +80,11 @@ Contraste : vérifier systématiquement le ratio WCAG AA pour tout texte sur fon
 
 ### 3.2 Typographies (source : charte graphique)
 
-| Rôle | Police de la charte | Usage |
-|---|---|---|
-| Signature / logo | **Autography** (script) | Nom "Emilie Odjouoriby" en logo/signature, très ponctuel |
-| Titres d'impact | **Holla** | Grands titres d'accroche (type baseline "Oser l'harmonie, innover avec audace") |
-| Texte courant | **Cocomat Pro** | Corps de texte, UI, boutons, navigation |
+| Rôle             | Police de la charte     | Usage                                                                           |
+| ---------------- | ----------------------- | ------------------------------------------------------------------------------- |
+| Signature / logo | **Autography** (script) | Nom "Emilie Odjouoriby" en logo/signature, très ponctuel                        |
+| Titres d'impact  | **Holla**               | Grands titres d'accroche (type baseline "Oser l'harmonie, innover avec audace") |
+| Texte courant    | **Cocomat Pro**         | Corps de texte, UI, boutons, navigation                                         |
 
 **Action obligatoire avant tout développement de la typographie :** vérifier la licence d'usage web (webfont license) de ces trois polices auprès de la cliente ou de leur fournisseur. Une licence "desktop" ne couvre généralement pas l'usage en `@font-face` sur un site public. Ne jamais embarquer un fichier de police sans confirmation que la licence l'autorise. Si une police n'a pas de licence web valide, en discuter avec le développeur avant de choisir une alternative (jamais une décision silencieuse de l'agent).
 
@@ -98,18 +98,18 @@ Une fois les fichiers de police obtenus (woff2 de préférence) : les héberger 
 
 Ces choix sont **définitifs**. Aucun agent ne doit les remettre en question ni proposer d'alternative sans demande explicite du développeur.
 
-| Catégorie | Technologie | Notes |
-|---|---|---|
-| Framework | **Next.js — dernière version stable, App Router** | Jamais Pages Router. Vérifier la version stable au moment du `pnpm create next-app` (ne pas se fier à une version mémorisée) |
-| Langage | **TypeScript strict** | `strict: true`, `noImplicitAny`, `noUncheckedIndexedAccess` obligatoires |
-| Package manager | **pnpm** | Jamais npm ni yarn |
-| Styling | **Tailwind CSS v4** | Config CSS-first via `@theme` dans `globals.css` — pas de `tailwind.config.ts`. Les couleurs de la charte (§3.1) doivent être déclarées comme design tokens ici, jamais en valeur brute dans les composants |
-| Animations | **Framer Motion** uniquement | Pas de GSAP : le site n'a pas de timelines scroll complexes ni de scènes 3D, Framer Motion suffit pour le reveal-on-scroll, les micro-interactions et les transitions de page. Ne pas ajouter GSAP "au cas où" |
-| Formulaires | **react-hook-form + Zod** | Schéma de validation partagé client/serveur pour le formulaire de contact et le diagnostic |
-| Emails transactionnels | **Resend** (ou équivalent choisi avec le développeur) | Pour l'envoi des résultats du diagnostic et des messages de contact. Clé API en variable d'environnement, jamais commitée |
-| Images | **next/image** | Obligatoire pour toutes les images (photos fournies par la cliente à optimiser en WebP/AVIF) |
-| Fonts | **next/font/local** | Obligatoire pour Autography, Holla, Cocomat Pro (voir §3.2) |
-| Composants 3D | **Aucun** | Ce site n'en a pas besoin — ne pas en introduire |
+| Catégorie              | Technologie                                           | Notes                                                                                                                                                                                                          |
+| ---------------------- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Framework              | **Next.js — dernière version stable, App Router**     | Jamais Pages Router. Vérifier la version stable au moment du `pnpm create next-app` (ne pas se fier à une version mémorisée)                                                                                   |
+| Langage                | **TypeScript strict**                                 | `strict: true`, `noImplicitAny`, `noUncheckedIndexedAccess` obligatoires                                                                                                                                       |
+| Package manager        | **pnpm**                                              | Jamais npm ni yarn                                                                                                                                                                                             |
+| Styling                | **Tailwind CSS v4**                                   | Config CSS-first via `@theme` dans `globals.css` — pas de `tailwind.config.ts`. Les couleurs de la charte (§3.1) doivent être déclarées comme design tokens ici, jamais en valeur brute dans les composants    |
+| Animations             | **Framer Motion** uniquement                          | Pas de GSAP : le site n'a pas de timelines scroll complexes ni de scènes 3D, Framer Motion suffit pour le reveal-on-scroll, les micro-interactions et les transitions de page. Ne pas ajouter GSAP "au cas où" |
+| Formulaires            | **react-hook-form + Zod**                             | Schéma de validation partagé client/serveur pour le formulaire de contact et le diagnostic                                                                                                                     |
+| Emails transactionnels | **Resend** (ou équivalent choisi avec le développeur) | Pour l'envoi des résultats du diagnostic et des messages de contact. Clé API en variable d'environnement, jamais commitée                                                                                      |
+| Images                 | **next/image**                                        | Obligatoire pour toutes les images (photos fournies par la cliente à optimiser en WebP/AVIF)                                                                                                                   |
+| Fonts                  | **next/font/local**                                   | Obligatoire pour Autography, Holla, Cocomat Pro (voir §3.2)                                                                                                                                                    |
+| Composants 3D          | **Aucun**                                             | Ce site n'en a pas besoin — ne pas en introduire                                                                                                                                                               |
 
 ---
 
