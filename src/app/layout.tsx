@@ -13,7 +13,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="fr"
       className={`${signatureFont.variable} ${displayFont.variable} ${bodyFont.variable} h-full antialiased`}
     >
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full grain">{children}</body>
     </html>
   );
 }
