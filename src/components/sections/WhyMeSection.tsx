@@ -1,11 +1,16 @@
+import { DecorativeBlob } from "@/components/ui/DecorativeBlob";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 
 export function WhyMeSection() {
   return (
-    <section className="bg-beige-clair/40 py-16">
-      <div className="mx-auto max-w-4xl px-6">
+    <section className="bg-beige-clair/40 py-20">
+      <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-2 md:items-center">
         <RevealOnScroll>
-          <h2 className="font-display text-3xl text-encre">Pourquoi faire appel à moi ?</h2>
+          <Eyebrow index="02">Pourquoi moi</Eyebrow>
+          <h2 className="mt-4 font-display text-3xl text-encre">
+            Pourquoi faire appel à <span className="italic text-corail">moi</span> ?
+          </h2>
           <p className="mt-6 text-lg leading-relaxed text-encre/80">
             Je connais les enjeux juridiques et les réalités humaines qui se rencontrent dans la vie
             d&apos;une entreprise.
@@ -31,6 +36,12 @@ export function WhyMeSection() {
             Basée au Bignon, j&apos;interviens en Pays de la Loire et en Bretagne sud, et en visio
             partout ailleurs.
           </p>
+        </RevealOnScroll>
+
+        <RevealOnScroll delay={0.1} className="relative hidden aspect-square md:block">
+          <div className="absolute inset-0 rounded-lg bg-dore/20" />
+          <DecorativeBlob className="inset-x-12 top-12 bottom-24 bg-corail/60" />
+          <DecorativeBlob className="bottom-8 left-16 right-24 top-1/2 bg-beige-clair" />
         </RevealOnScroll>
       </div>
     </section>
