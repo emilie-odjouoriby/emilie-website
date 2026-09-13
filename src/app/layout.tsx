@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
 import { signatureFont, displayFont, bodyFont } from "@/lib/fonts";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
-import { CustomCursor } from "@/components/layout/CustomCursor";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,12 +13,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="fr"
       className={`${signatureFont.variable} ${displayFont.variable} ${bodyFont.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <CustomCursor />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-      </body>
+      <body className="min-h-full">{children}</body>
     </html>
   );
 }
