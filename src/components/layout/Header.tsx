@@ -32,7 +32,7 @@ export function Header() {
   );
 
   return (
-    <header className="sticky top-4 z-40 mx-auto min-w-full px-4 sm:px-18">
+    <header className="sticky top-4 z-40 mx-auto min-w-full lg:min-w-7xl px-4 lg:px-6">
       <div
         className={`flex items-center justify-between gap-4 rounded-lg border px-6 py-3 transition-all duration-300 ${
           isScrolled
@@ -45,14 +45,14 @@ export function Header() {
             src={logo}
             alt="Emilie Odjouoriby"
             height={112}
-            className="h-30 w-auto"
+            className="h-28 w-auto"
             priority
           />
         </Link>
 
         <nav
           aria-label="Navigation principale"
-          className="hidden items-center gap-6 md:flex lg:gap-8"
+          className="hidden items-center gap-6 lg:flex lg:gap-8"
         >
           {NAV_LINKS.map((link) => (
             <Link
@@ -65,7 +65,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Button href={ROUTES.diagnostic}>Diagnostic gratuit</Button>
         </div>
 
