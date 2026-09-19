@@ -32,7 +32,7 @@ export function Header() {
   );
 
   return (
-    <header className="sticky top-4 z-40 mx-auto min-w-full lg:min-w-7xl px-4 lg:px-6">
+    <header className="sticky top-4 z-40 mx-auto min-w-full xl:min-w-7xl px-4 lg:px-6">
       <div
         className={`flex items-center justify-between gap-4 rounded-lg border px-6 py-3 transition-all duration-300 ${
           isScrolled
