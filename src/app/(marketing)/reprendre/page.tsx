@@ -42,7 +42,7 @@ export default function ReprendrePage() {
         <DecorativeBlob className="right-10 top-40 hidden h-56 w-56 bg-dore/30 md:h-72 md:w-72 lg:block" />
         <DecorativeBlob className="right-56 top-4 hidden h-24 w-24 bg-beige-clair lg:block" />
 
-        <div className="relative mx-auto max-w-6xl px-6 pb-36 pt-40">
+        <div className="relative mx-auto max-w-6xl px-6  pb-16 lg:pb-36 pt-20 lg:pt-40">
           <RevealOnScroll className="max-w-3xl">
             <h1 className="font-display text-4xl text-encre md:text-5xl">
               Reprendre une entreprise
