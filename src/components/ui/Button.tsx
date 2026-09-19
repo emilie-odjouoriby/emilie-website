@@ -5,13 +5,16 @@ import type {
   ReactNode,
 } from "react";
 
-type ButtonVariant = "primary" | "secondary" | "ghost";
+type ButtonVariant = "primary" | "secondary" | "ghost" | "accent";
 
 const VARIANT_CLASSES: Record<ButtonVariant, string> = {
   primary: "bg-corail text-encre hover:bg-corail/90",
   secondary:
     "border border-dore/40 bg-beige-clair text-encre hover:bg-beige-clair/70",
   ghost: "bg-transparent text-encre hover:bg-beige-clair/60",
+  // Bleu de la charte : touche ponctuelle uniquement, jamais en grande surface —
+  // encre est la seule couleur de la charte offrant un contraste AA sur ce bleu (~7.9:1).
+  accent: "bg-bleu text-encre shadow-md hover:bg-bleu/90",
 };
 
 // Contraste vérifié (Phase 1) : toujours du texte encre sur corail, jamais blanc.

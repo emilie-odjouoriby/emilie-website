@@ -53,10 +53,18 @@ export function ProfilesSection() {
                     <span aria-hidden>—</span>
                     <span>{profile.tag}</span>
                   </div>
-                  <h3 className="mt-4 font-display text-xl text-encre">{profile.title}</h3>
-                  <p className="mt-4 text-sm leading-relaxed text-encre/80">{profile.description}</p>
+                  <h3 className="mt-4 font-display text-xl text-encre">
+                    {profile.title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-relaxed text-encre/80">
+                    {profile.description}
+                  </p>
                 </div>
-                <Button href={profile.href} variant="secondary" className="mt-6 self-start">
+                <Button
+                  href={profile.href}
+                  variant="secondary"
+                  className="mt-6 self-start"
+                >
                   {profile.cta}
                 </Button>
               </Card>
