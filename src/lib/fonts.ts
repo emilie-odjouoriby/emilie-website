@@ -1,24 +1,23 @@
-import { Beau_Rivage, Bricolage_Grotesque, Inter } from "next/font/google";
+import localFont from "next/font/local";
 
-// TEMPORAIRE — polices de secours en attendant les fichiers licenciés
-// Autography / Holla / Cocomat Pro (CLAUDE.md §3.2). Ne modifier QUE ce fichier
-// pour basculer vers next/font/local dès réception des woff2.
-
-export const signatureFont = Beau_Rivage({
+// Polices de la charte graphique (CLAUDE.md §3.2), fichiers woff2 dans public/fonts/.
+export const signatureFont = localFont({
+  src: "../../public/fonts/Autography.woff2",
   variable: "--font-signature",
   weight: "400",
-  subsets: ["latin"],
   display: "swap",
 });
 
-export const displayFont = Bricolage_Grotesque({
+export const displayFont = localFont({
+  src: "../../public/fonts/HollaScript.woff2",
   variable: "--font-display",
-  subsets: ["latin"],
+  weight: "400",
   display: "swap",
 });
 
-export const bodyFont = Inter({
+export const bodyFont = localFont({
+  src: "../../public/fonts/CocomatPro-Regular.woff2",
   variable: "--font-body",
-  subsets: ["latin"],
+  weight: "400",
   display: "swap",
 });
