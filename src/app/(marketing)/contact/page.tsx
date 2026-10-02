@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/Button";
+import { ContactForm } from "@/components/contact/ContactForm";
 import { DecorativeBlob } from "@/components/ui/DecorativeBlob";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
@@ -11,14 +12,6 @@ export const metadata = buildMetadata({
     "Besoin d'échanger sur votre projet de transmission, de reprise ou de coaching d'associés ? Réservez un créneau ou écrivez-moi directement.",
   path: ROUTES.contact,
 });
-
-const SUBJECT_OPTIONS = [
-  "Céder ou transmettre mon entreprise",
-  "Reprendre une entreprise",
-  "Coaching d'associés",
-  "Coaching individuel",
-  "Autre demande",
-] as const;
 
 export default function ContactPage() {
   return (
@@ -78,88 +71,7 @@ export default function ContactPage() {
           </RevealOnScroll>
 
           <RevealOnScroll delay={0.1}>
-            <form className="rounded-lg bg-white p-8 shadow-soft md:p-10">
-              <Eyebrow index="02">Premier contact</Eyebrow>
-              <div className="mt-6 grid gap-5 sm:grid-cols-2">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="text-sm font-medium text-encre"
-                  >
-                    Nom et prénom
-                  </label>
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    className="mt-1 w-full rounded-md border border-dore/30 bg-white px-3 py-2 text-sm text-encre"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="text-sm font-medium text-encre"
-                  >
-                    Téléphone
-                  </label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    className="mt-1 w-full rounded-md border border-dore/30 bg-white px-3 py-2 text-sm text-encre"
-                  />
-                </div>
-              </div>
-              <div className="mt-5">
-                <label
-                  htmlFor="email"
-                  className="text-sm font-medium text-encre"
-                >
-                  Email
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  className="mt-1 w-full rounded-md border border-dore/30 bg-white px-3 py-2 text-sm text-encre"
-                />
-              </div>
-              <div className="mt-5">
-                <label
-                  htmlFor="subject"
-                  className="text-sm font-medium text-encre"
-                >
-                  Objet de votre demande
-                </label>
-                <select
-                  id="subject"
-                  name="subject"
-                  className="mt-1 w-full rounded-md border border-dore/30 bg-white px-3 py-2 text-sm text-encre"
-                >
-                  {SUBJECT_OPTIONS.map((option) => (
-                    <option key={option}>{option}</option>
-                  ))}
-                </select>
-              </div>
-              <div className="mt-5">
-                <label
-                  htmlFor="message"
-                  className="text-sm font-medium text-encre"
-                >
-                  Votre message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={5}
-                  className="mt-1 w-full rounded-md border border-dore/30 bg-white px-3 py-2 text-sm text-encre"
-                />
-              </div>
-              {/* Formulaire non fonctionnel — validation Zod + envoi Resend arrivent en Phase 6. */}
-              <Button type="button" className="mt-6 w-full">
-                Envoyer le message
-              </Button>
-            </form>
+            <ContactForm />
           </RevealOnScroll>
         </div>
       </section>
