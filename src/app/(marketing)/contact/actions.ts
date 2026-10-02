@@ -16,21 +16,25 @@ export interface ContactActionResult {
   formError?: string;
 }
 
-export async function submitContactForm(input: unknown): Promise<ContactActionResult> {
+export async function submitContactForm(
+  input: unknown,
+): Promise<ContactActionResult> {
   const parsed = contactSchema.safeParse(input);
 
   if (!parsed.success) {
     return { success: false, fieldErrors: parsed.error.flatten().fieldErrors };
   }
 
-  const { name, phone, email, subject, message, website, renderedAt } = parsed.data;
+  const { name, phone, email, subject, message, hpField, renderedAt } =
+    parsed.data;
 
-  if (website || Date.now() - renderedAt < MIN_SUBMIT_DELAY_MS) {
+  if (hpField || Date.now() - renderedAt < MIN_SUBMIT_DELAY_MS) {
     return SILENT_SUCCESS;
   }
 
   const subjectLabel =
-    SUBJECT_OPTIONS.find((option) => option.value === subject)?.label ?? subject;
+    SUBJECT_OPTIONS.find((option) => option.value === subject)?.label ??
+    subject;
 
   try {
     await resend.emails.send({

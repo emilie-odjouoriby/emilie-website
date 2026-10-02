@@ -12,7 +12,12 @@ export const contactSchema = z.object({
     .trim()
     .min(2, "Merci d'indiquer votre nom et prénom.")
     .max(120, "Ce nom est trop long."),
-  phone: z.string().trim().max(20, "Ce numéro est trop long.").optional().or(z.literal("")),
+  phone: z
+    .string()
+    .trim()
+    .max(20, "Ce numéro est trop long.")
+    .optional()
+    .or(z.literal("")),
   email: z.string().trim().email("Merci d'indiquer une adresse email valide."),
   subject: z.enum(SUBJECT_VALUES, {
     message: "Merci de sélectionner un objet.",
@@ -22,8 +27,9 @@ export const contactSchema = z.object({
     .trim()
     .min(10, "Votre message mérite quelques mots de plus.")
     .max(4000, "Ce message est trop long."),
-  // Honeypot : doit rester vide, les humains ne voient pas ce champ.
-  website: z.string().max(0).optional().or(z.literal("")),
+  // Honeypot : une case à cocher (jamais remplie par les autofill/gestionnaires de mots de
+  // passe, contrairement à un champ texte) — un humain ne la voit ni ne la coche jamais.
+  hpField: z.boolean().optional(),
   // Horodatage d'affichage du formulaire, pour détecter les soumissions trop rapides (bots).
   renderedAt: z.number(),
 });
