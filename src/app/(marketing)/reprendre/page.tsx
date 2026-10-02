@@ -6,6 +6,14 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { PageCtaBanner } from "@/components/sections/PageCtaBanner";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { ROUTES } from "@/constants/routes";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Reprendre une entreprise",
+  description:
+    "Un accompagnement avant, pendant et après la reprise d'entreprise pour sécuriser votre prise de fonction et construire votre légitimité. TPE-PME, Pays de la Loire, Bretagne sud.",
+  path: ROUTES.reprendre,
+});
 
 const QUESTIONS = [
   "Le prix est-il juste pour moi et pour l'entreprise ?",

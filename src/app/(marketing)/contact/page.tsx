@@ -2,6 +2,15 @@ import { Button } from "@/components/ui/Button";
 import { DecorativeBlob } from "@/components/ui/DecorativeBlob";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
+import { ROUTES } from "@/constants/routes";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Contact",
+  description:
+    "Besoin d'échanger sur votre projet de transmission, de reprise ou de coaching d'associés ? Réservez un créneau ou écrivez-moi directement.",
+  path: ROUTES.contact,
+});
 
 const SUBJECT_OPTIONS = [
   "Céder ou transmettre mon entreprise",
