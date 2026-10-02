@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { DecorativeBlob } from "@/components/ui/DecorativeBlob";
 import { Eyebrow } from "@/components/ui/Eyebrow";
-import { Pill } from "@/components/ui/Pill";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 
 const SUBJECT_OPTIONS = [
