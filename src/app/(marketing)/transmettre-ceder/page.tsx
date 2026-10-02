@@ -6,6 +6,14 @@ import { NumberedSteps } from "@/components/sections/NumberedSteps";
 import { PageCtaBanner } from "@/components/sections/PageCtaBanner";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { ROUTES } from "@/constants/routes";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Transmettre ou céder son entreprise",
+  description:
+    "Accompagnement à la transmission et à la cession d'entreprise : diagnostic, structuration de la gouvernance et sécurisation du passage de relais avec le repreneur. Pays de la Loire, Bretagne sud.",
+  path: ROUTES.transmettreCeder,
+});
 
 const BLOCKING_QUESTIONS = [
   "Vous vous demandez combien vaut l'entreprise, vos parts, le fonds ? Comment préparer votre cession et par où commencer ?",

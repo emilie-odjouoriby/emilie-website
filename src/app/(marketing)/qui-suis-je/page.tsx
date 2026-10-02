@@ -5,6 +5,15 @@ import { DecorativeBlob } from "@/components/ui/DecorativeBlob";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Pill } from "@/components/ui/Pill";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
+import { ROUTES } from "@/constants/routes";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Qui suis-je",
+  description:
+    "Juriste depuis 2007 et coach professionnelle certifiée ICF, j'accompagne les dirigeants de TPE-PME au Bignon, en Pays de la Loire, en Bretagne sud et au Bénin.",
+  path: ROUTES.quiSuisJe,
+});
 
 export default function QuiSuisJePage() {
   return (

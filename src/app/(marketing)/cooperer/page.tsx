@@ -5,6 +5,14 @@ import { PageCtaBanner } from "@/components/sections/PageCtaBanner";
 import { Pill } from "@/components/ui/Pill";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { ROUTES } from "@/constants/routes";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Coaching d'associés et codirigeants — CoOpérer",
+  description:
+    "Retrouver un fonctionnement plus serein entre associés : coaching d'associés et de codirigeants pour clarifier les rôles, désamorcer les tensions et retrouver un alignement commun.",
+  path: ROUTES.cooperer,
+});
 
 const TABLE_TOPICS = [
   "Déposer les non-dits et clarifier les rôles et responsabilités de chacun.",
