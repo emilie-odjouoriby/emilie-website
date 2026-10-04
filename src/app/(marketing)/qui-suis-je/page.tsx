@@ -11,7 +11,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Qui suis-je",
   description:
-    "Juriste depuis 2007 et coach professionnelle certifiée ICF, j'accompagne les dirigeants de TPE-PME au Bignon, en Pays de la Loire, en Bretagne sud et au Bénin.",
+    "Juriste depuis 2007 et coach professionnelle certifiée ICF, j'accompagne les dirigeants de TPE-PME à Nantes, en Pays de la Loire, en Bretagne sud et au Bénin.",
   path: ROUTES.quiSuisJe,
 });
 
@@ -40,7 +40,7 @@ export default function QuiSuisJePage() {
               avec eux lorsque cela est nécessaire.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-encre/80">
-              Basée au Bignon, en Loire-Atlantique, j&apos;interviens en
+              Basée à Nantes, en Loire-Atlantique, j&apos;interviens en
               présentiel en Pays de la Loire et en Bretagne sud, et en visio
               partout ailleurs, y compris pour les entrepreneurs que
               j&apos;accompagne au Bénin.

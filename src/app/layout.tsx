@@ -34,7 +34,7 @@ const JSON_LD = {
       founder: { "@id": `${SITE_URL}/#person` },
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Le Bignon",
+        addressLocality: "Nantes",
         addressRegion: "Pays de la Loire",
         addressCountry: "FR",
       },
