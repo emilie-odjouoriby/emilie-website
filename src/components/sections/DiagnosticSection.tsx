@@ -17,6 +17,7 @@ export function DiagnosticSection() {
                 alt=""
                 aria-hidden
                 fill
+                sizes="56px"
                 className="object-cover"
               />
             </div>
