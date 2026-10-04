@@ -160,7 +160,7 @@ export default function ReprendrePage() {
         buttonLabel="Parlons de votre projet de reprise"
         buttonHref={ROUTES.contact}
       >
-        Basée au Bignon, en Loire-Atlantique, j&apos;interviens en présentiel en
+        Basée à Nantes, en Loire-Atlantique, j&apos;interviens en présentiel en
         Pays de la Loire et en Bretagne sud, et en visio partout ailleurs, y
         compris pour les entrepreneurs que j&apos;accompagne au Bénin.
       </PageCtaBanner>

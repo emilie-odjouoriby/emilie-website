@@ -8,7 +8,7 @@ const CREDENTIALS = [
   "Professionnelle du droit depuis 2007",
   "Coach professionnelle certifiée ICF, praticienne PNL",
   "500+ sociétés créées, 50+ transmissions accompagnées",
-  "Basée au Bignon, Pays de la Loire & Bretagne sud",
+  "Basée à Nantes, Pays de la Loire & Bretagne sud",
 ] as const;
 
 export function WhyMeSection() {
@@ -45,7 +45,7 @@ export function WhyMeSection() {
           </p>
 
           <p className="mt-8 text-sm text-encre/70">
-            Basée au Bignon, j&apos;interviens en Pays de la Loire et en
+            Basée à Nantes, j&apos;interviens en Pays de la Loire et en
             Bretagne sud, et en visio partout ailleurs.
           </p>
         </RevealOnScroll>

@@ -19,7 +19,7 @@ export function Footer() {
             />
           </Link>
           <p className="max-w-xs text-encre/70">
-            Basée au Bignon, intervention en Pays de la Loire et en Bretagne
+            Basée à Nantes, intervention en Pays de la Loire et en Bretagne
             sud, et en visio partout ailleurs.
           </p>
         </div>
