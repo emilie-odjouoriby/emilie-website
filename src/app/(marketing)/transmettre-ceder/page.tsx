@@ -113,10 +113,10 @@ export default function TransmettreCederPage() {
         buttonLabel="Parlons de votre projet de transmission"
         buttonHref={ROUTES.contact}
       >
-        Basée à Nantes, j&apos;interviens en présentiel en
-        Pays de la Loire et en Bretagne sud, et en visio partout ailleurs, y
-        compris pour mes clients établis au Bénin. J&apos;accompagne aussi les
-        transmissions intra-familiales et les reprises par les salariés.
+        Basée à Nantes, j&apos;interviens en présentiel en Pays de la Loire et
+        en Bretagne sud, et en visio partout ailleurs, y compris pour mes
+        clients établis au Bénin. J&apos;accompagne aussi les transmissions
+        intra-familiales et les reprises par les salariés.
       </PageCtaBanner>
     </>
   );

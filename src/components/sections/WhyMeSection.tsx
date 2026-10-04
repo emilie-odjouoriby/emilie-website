@@ -45,8 +45,8 @@ export function WhyMeSection() {
           </p>
 
           <p className="mt-8 text-sm text-encre/70">
-            Basée à Nantes, j&apos;interviens en Pays de la Loire et en
-            Bretagne sud, et en visio partout ailleurs.
+            Basée à Nantes, j&apos;interviens en Pays de la Loire et en Bretagne
+            sud, et en visio partout ailleurs.
           </p>
         </RevealOnScroll>
 
