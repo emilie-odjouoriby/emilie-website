@@ -5,4 +5,5 @@ export const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Domaine emilieodjouoriby.com vérifié sur Resend (DKIM/SPF/DMARC) — n'interfère pas
 // avec les emails IONOS existants (infrastructure d'envoi isolée sur le sous-domaine "send").
-export const CONTACT_FROM_ADDRESS = "Site Émilie Odjouoriby <site@emilieodjouoriby.com>";
+export const CONTACT_FROM_ADDRESS =
+  "Site Émilie Odjouoriby <contact@emilieodjouoriby.com>";
