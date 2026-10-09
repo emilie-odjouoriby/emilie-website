@@ -20,8 +20,8 @@ export function HeroSection() {
           <Pill tone="beige">Juriste depuis 2007 · Coach certifiée ICF</Pill>
           <h1 className="mt-6 font-display text-5xl leading-tight text-encre md:text-7xl">
             Céder, reprendre ou{" "}
-            <span className="text-corail">mieux travailler</span> avec
-            vos associés
+            <span className="text-corail">mieux travailler</span> avec vos
+            associés
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-encre/80">
             Céder une entreprise, en reprendre une, ou mieux vous entendre avec

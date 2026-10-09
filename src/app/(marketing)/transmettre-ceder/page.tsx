@@ -51,8 +51,8 @@ export default function TransmettreCederPage() {
         <div className="relative mx-auto max-w-6xl px-6 pb-16 lg:pb-26 pt-20 lg:pt-40">
           <RevealOnScroll className="max-w-3xl">
             <h1 className="font-display text-4xl text-encre md:text-5xl">
-              Transmettre ou <span className="text-corail">céder</span>{" "}
-              mon entreprise
+              Transmettre ou <span className="text-corail">céder</span> mon
+              entreprise
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-encre/80">
               Transmettre ou céder son entreprise est une étape importante.
