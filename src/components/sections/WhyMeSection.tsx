@@ -19,7 +19,7 @@ export function WhyMeSection() {
           <Eyebrow index="02">Pourquoi moi</Eyebrow>
           <h2 className="mt-4 font-display text-3xl text-encre">
             Pourquoi faire appel à{" "}
-            <span className="italic text-corail">moi</span> ?
+            <span className="text-corail">moi</span> ?
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-encre/80">
             Je connais les enjeux juridiques et les réalités humaines qui se
@@ -51,7 +51,7 @@ export function WhyMeSection() {
         </RevealOnScroll>
 
         <RevealOnScroll delay={0.1} className="relative">
-          <div className="relative hidden md:block">
+          <div className="relative">
             <DecorativeBlob className="-right-6 -top-6 h-32 w-32 bg-corail/50" />
             <div className="relative aspect-square overflow-hidden rounded-lg">
               <Image
@@ -64,7 +64,7 @@ export function WhyMeSection() {
             </div>
           </div>
 
-          <p className="mt-8 text-xs font-semibold uppercase tracking-widest text-dore md:mt-6">
+          <p className="mt-8 text-xs font-semibold uppercase tracking-widest text-encre/70 md:mt-6">
             En bref
           </p>
           <ul className="mt-4 space-y-2">

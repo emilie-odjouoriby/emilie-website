@@ -20,7 +20,7 @@ export function HeroSection() {
           <Pill tone="beige">Juriste depuis 2007 · Coach certifiée ICF</Pill>
           <h1 className="mt-6 font-display text-5xl leading-tight text-encre md:text-7xl">
             Céder, reprendre ou{" "}
-            <span className="italic text-corail">mieux travailler</span> avec
+            <span className="text-corail">mieux travailler</span> avec
             vos associés
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-encre/80">
@@ -32,9 +32,6 @@ export function HeroSection() {
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-3">
             <Button href="#diagnostic">Faire mon diagnostic gratuit</Button>
-            <Button href="#pourquoi-moi" variant="ghost">
-              Pourquoi me faire confiance
-            </Button>
           </div>
         </RevealOnScroll>
 

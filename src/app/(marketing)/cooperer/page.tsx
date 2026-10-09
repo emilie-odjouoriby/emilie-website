@@ -50,7 +50,7 @@ export default function CooperePage() {
           <RevealOnScroll className="max-w-3xl">
             <h1 className="font-display text-4xl text-encre md:text-5xl">
               Retrouver un fonctionnement plus{" "}
-              <span className="italic text-corail">serein</span> entre associés
+              <span className="text-corail">serein</span> entre associés
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-encre/80">
               Diriger une entreprise à plusieurs peut être une vraie force. Avec
@@ -83,7 +83,7 @@ export default function CooperePage() {
         <div className="mx-auto max-w-6xl px-6">
           <RevealOnScroll className="max-w-2xl">
             <Eyebrow index="01">Vos sujets</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl text-encre">
+            <h2 className="mt-4 font-display text-3xl text-encre">
               Je vous aide à remettre les sujets importants sur la table et à :
             </h2>
           </RevealOnScroll>
