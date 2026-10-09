@@ -18,8 +18,7 @@ export function WhyMeSection() {
         <RevealOnScroll>
           <Eyebrow index="02">Pourquoi moi</Eyebrow>
           <h2 className="mt-4 font-display text-3xl text-encre">
-            Pourquoi faire appel à{" "}
-            <span className="text-corail">moi</span> ?
+            Pourquoi faire appel à <span className="text-corail">moi</span> ?
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-encre/80">
             Je connais les enjeux juridiques et les réalités humaines qui se
