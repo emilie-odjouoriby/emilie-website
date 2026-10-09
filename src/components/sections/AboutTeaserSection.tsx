@@ -10,7 +10,7 @@ export function AboutTeaserSection() {
   return (
     <section className="py-20">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-2 md:items-center">
-        <RevealOnScroll className="relative order-2 hidden md:order-1 md:block">
+        <RevealOnScroll className="relative order-2 md:order-1">
           <DecorativeBlob className="-bottom-6 -left-6 h-32 w-32 bg-dore/50" />
           <div className="relative aspect-square overflow-hidden rounded-lg">
             <Image

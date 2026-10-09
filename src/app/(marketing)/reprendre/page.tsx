@@ -66,7 +66,7 @@ export default function ReprendrePage() {
             </p>
             <p className="mt-4 text-lg leading-relaxed text-encre/80">
               Vous allez aussi devoir{" "}
-              <span className="italic text-corail">trouver votre place</span>.
+              <span className="text-corail">trouver votre place</span>.
             </p>
           </RevealOnScroll>
         </div>
@@ -74,7 +74,18 @@ export default function ReprendrePage() {
 
       <section className="bg-beige-clair/30 py-16">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2">
-          <RevealOnScroll delay={0.1} className="relative hidden md:block">
+          <RevealOnScroll>
+            <Eyebrow index="01">Vos questions</Eyebrow>
+            <h2 className="mt-4 font-display text-3xl text-encre">
+              Vous vous demandez peut-être
+            </h2>
+            <BulletList items={QUESTIONS} className="mt-6" />
+            <p className="mt-6 text-encre/80">
+              Ces questions peuvent se préparer avant même la signature.
+            </p>
+          </RevealOnScroll>
+
+          <RevealOnScroll delay={0.1} className="relative">
             <DecorativeBlob className="-bottom-6 -left-6 h-28 w-28 bg-dore/40" />
             <div className="relative aspect-square overflow-hidden rounded-lg">
               <Image
@@ -86,17 +97,6 @@ export default function ReprendrePage() {
               />
             </div>
           </RevealOnScroll>
-
-          <RevealOnScroll>
-            <Eyebrow index="01">Vos questions</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl text-encre">
-              Vous vous demandez peut-être
-            </h2>
-            <BulletList items={QUESTIONS} className="mt-6" />
-            <p className="mt-6 text-encre/80">
-              Ces questions peuvent se préparer avant même la signature.
-            </p>
-          </RevealOnScroll>
         </div>
       </section>
 
@@ -104,7 +104,7 @@ export default function ReprendrePage() {
         <div className="mx-auto max-w-6xl px-6">
           <RevealOnScroll className="max-w-2xl">
             <Eyebrow index="02">Mon accompagnement</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl text-encre">
+            <h2 className="mt-4 font-display text-3xl text-encre">
               Je vous accompagne avant, pendant et après la reprise
             </h2>
           </RevealOnScroll>

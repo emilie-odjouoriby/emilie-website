@@ -47,7 +47,7 @@ export default function ContactPage() {
         <div className="mx-auto grid max-w-6xl gap-12 px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)] lg:items-start">
           <RevealOnScroll>
             <Eyebrow index="01">Un premier échange</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl text-encre">
+            <h2 className="mt-4 font-display text-3xl text-encre">
               Vous préférez échanger directement ?
             </h2>
             <p className="mt-4 text-encre/80">

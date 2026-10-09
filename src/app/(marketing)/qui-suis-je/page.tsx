@@ -53,7 +53,7 @@ export default function QuiSuisJePage() {
         <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-2 md:items-center">
           <RevealOnScroll>
             <Eyebrow index="02">Mon parcours</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl text-encre">
+            <h2 className="mt-4 font-display text-3xl text-encre">
               Une expérience concrète de l&apos;entreprise
             </h2>
             <p className="mt-4 text-encre/80">
@@ -87,7 +87,7 @@ export default function QuiSuisJePage() {
             </p>
           </RevealOnScroll>
 
-          <RevealOnScroll delay={0.1} className="relative hidden md:block">
+          <RevealOnScroll delay={0.1} className="relative">
             <DecorativeBlob className="-right-6 -top-6 h-28 w-28 bg-corail/40" />
             <div className="relative aspect-square overflow-hidden rounded-lg">
               <Image
@@ -109,7 +109,7 @@ export default function QuiSuisJePage() {
         <div className="relative mx-auto max-w-3xl px-6">
           <RevealOnScroll>
             <Eyebrow index="04">Au-delà de l&apos;entreprise</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl text-encre">
+            <h2 className="mt-4 font-display text-3xl text-encre">
               Franco-béninoise
             </h2>
             <div className="mt-4 flex gap-3">

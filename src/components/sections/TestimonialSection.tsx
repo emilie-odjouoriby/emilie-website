@@ -19,7 +19,7 @@ export function TestimonialSection() {
             attentive et silencieuse, une intuition fine et une profonde volonté
             de respect d&apos;elle-même et des autres. »
           </blockquote>
-          <p className="mt-6 text-sm font-semibold uppercase tracking-widest text-dore">
+          <p className="mt-6 text-sm font-semibold uppercase tracking-widest text-encre/70">
             — Céline, consultante en stratégie d&apos;entreprise et coach
           </p>
         </RevealOnScroll>

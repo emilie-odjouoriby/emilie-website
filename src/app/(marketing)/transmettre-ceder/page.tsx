@@ -51,7 +51,7 @@ export default function TransmettreCederPage() {
         <div className="relative mx-auto max-w-6xl px-6 pb-16 lg:pb-26 pt-20 lg:pt-40">
           <RevealOnScroll className="max-w-3xl">
             <h1 className="font-display text-4xl text-encre md:text-5xl">
-              Transmettre ou <span className="italic text-corail">céder</span>{" "}
+              Transmettre ou <span className="text-corail">céder</span>{" "}
               mon entreprise
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-encre/80">
@@ -77,7 +77,7 @@ export default function TransmettreCederPage() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2">
           <RevealOnScroll>
             <Eyebrow index="01">Vos blocages</Eyebrow>
-            <h2 className="mt-4 font-display text-2xl text-encre">
+            <h2 className="mt-4 font-display text-3xl text-encre">
               Qu&apos;est-ce qui vous empêche de passer à l&apos;action ?
             </h2>
             <BulletList items={BLOCKING_QUESTIONS} className="mt-6" />
@@ -87,7 +87,7 @@ export default function TransmettreCederPage() {
             </p>
           </RevealOnScroll>
 
-          <RevealOnScroll delay={0.1} className="relative hidden md:block">
+          <RevealOnScroll delay={0.1} className="relative">
             <DecorativeBlob className="-bottom-6 -right-6 h-28 w-28 bg-dore/40" />
             <div className="relative aspect-square overflow-hidden rounded-lg">
               <Image

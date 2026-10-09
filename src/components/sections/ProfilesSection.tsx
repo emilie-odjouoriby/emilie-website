@@ -48,7 +48,7 @@ export function ProfilesSection() {
             <RevealOnScroll key={profile.href} delay={index * 0.1}>
               <Card className="flex h-full flex-col justify-between">
                 <div>
-                  <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-widest text-dore">
+                  <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-widest text-encre/70">
                     <span>{profile.index}</span>
                     <span aria-hidden>—</span>
                     <span>{profile.tag}</span>
