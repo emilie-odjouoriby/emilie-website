@@ -134,7 +134,7 @@ export function ContactForm() {
         aria-live="polite"
         className="rounded-lg bg-white p-8 shadow-soft md:p-10"
       >
-        <Eyebrow index="02">Premier contact</Eyebrow>
+        <Eyebrow>Premier contact</Eyebrow>
         <h3 className="mt-4 font-display text-xl text-encre">Message envoyé</h3>
         <p className="mt-2 text-sm leading-relaxed text-encre/80">
           Merci, votre message a bien été envoyé. Je reviens vers vous dès que
@@ -150,8 +150,6 @@ export function ContactForm() {
       noValidate
       className="rounded-lg bg-white p-8 shadow-soft md:p-10"
     >
-      <Eyebrow index="02">Premier contact</Eyebrow>
-
       <input
         type="hidden"
         {...register("renderedAt", { valueAsNumber: true })}

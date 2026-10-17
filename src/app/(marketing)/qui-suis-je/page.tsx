@@ -2,7 +2,6 @@ import Image from "next/image";
 import { ClosingCtaSection } from "@/components/sections/ClosingCtaSection";
 import { TestimonialSection } from "@/components/sections/TestimonialSection";
 import { DecorativeBlob } from "@/components/ui/DecorativeBlob";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Pill } from "@/components/ui/Pill";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { ROUTES } from "@/constants/routes";
@@ -27,7 +26,7 @@ export default function QuiSuisJePage() {
           <RevealOnScroll className="max-w-3xl">
             <Pill tone="beige">Juriste depuis 2007 · Coach certifiée ICF</Pill>
             <h1 className="mt-6 font-display text-4xl text-encre md:text-5xl">
-              Qui suis-je
+              <span className="text-corail">Qui</span> suis-je
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-encre/80">
               Je suis professionnelle du droit depuis 2007, et coach
@@ -52,7 +51,6 @@ export default function QuiSuisJePage() {
       <section className="bg-beige-clair/30 py-16">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-2 md:items-center">
           <RevealOnScroll>
-            <Eyebrow index="02">Mon parcours</Eyebrow>
             <h2 className="mt-4 font-display text-3xl text-encre">
               Une expérience concrète de l&apos;entreprise
             </h2>
@@ -108,7 +106,7 @@ export default function QuiSuisJePage() {
         <DecorativeBlob className="-right-10 bottom-0 h-40 w-40 bg-corail/30" />
         <div className="relative mx-auto max-w-3xl px-6">
           <RevealOnScroll>
-            <Eyebrow index="04">Au-delà de l&apos;entreprise</Eyebrow>
+            <h2 className="uppercase text-xs">Au-delà de l&apos;entreprise</h2>
             <h2 className="mt-4 font-display text-3xl text-encre">
               Franco-béninoise
             </h2>

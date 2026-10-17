@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { DecorativeBlob } from "@/components/ui/DecorativeBlob";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { ROUTES } from "@/constants/routes";
 import photo from "../../../public/photos/photo3.webp";
@@ -24,7 +23,6 @@ export function AboutTeaserSection() {
         </RevealOnScroll>
 
         <RevealOnScroll delay={0.1} className="order-1 md:order-2">
-          <Eyebrow index="04">À propos</Eyebrow>
           <h2 className="mt-4 font-display text-3xl text-encre">
             Qui suis-je ?
           </h2>

@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 
 interface EyebrowProps {
-  index: string;
+  index?: string;
   children: ReactNode;
   className?: string;
 }
@@ -11,8 +11,12 @@ export function Eyebrow({ index, children, className = "" }: EyebrowProps) {
     <p
       className={`flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-encre/70 ${className}`}
     >
-      <span>{index}</span>
-      <span aria-hidden>·</span>
+      {index ? (
+        <>
+          <span>{index}</span>
+          <span aria-hidden>·</span>
+        </>
+      ) : null}
       <span>{children}</span>
     </p>
   );

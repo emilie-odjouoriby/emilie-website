@@ -2,7 +2,6 @@ import Image from "next/image";
 import { BulletList } from "@/components/ui/BulletList";
 import { Card } from "@/components/ui/Card";
 import { DecorativeBlob } from "@/components/ui/DecorativeBlob";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 import { PageCtaBanner } from "@/components/sections/PageCtaBanner";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { ROUTES } from "@/constants/routes";
@@ -53,7 +52,7 @@ export default function ReprendrePage() {
         <div className="relative mx-auto max-w-6xl px-6  pb-16 lg:pb-36 pt-20 lg:pt-40">
           <RevealOnScroll className="max-w-3xl">
             <h1 className="font-display text-4xl text-encre md:text-5xl">
-              Reprendre une entreprise
+              <span className="text-corail">Reprendre</span> une entreprise
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-encre/80">
               Une reprise ne se résume pas à trouver une entreprise, obtenir un
@@ -75,7 +74,6 @@ export default function ReprendrePage() {
       <section className="bg-beige-clair/30 py-16">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2">
           <RevealOnScroll>
-            <Eyebrow index="01">Vos questions</Eyebrow>
             <h2 className="mt-4 font-display text-3xl text-encre">
               Vous vous demandez peut-être
             </h2>
@@ -103,7 +101,6 @@ export default function ReprendrePage() {
       <section className="py-16">
         <div className="mx-auto max-w-6xl px-6">
           <RevealOnScroll className="max-w-2xl">
-            <Eyebrow index="02">Mon accompagnement</Eyebrow>
             <h2 className="mt-4 font-display text-3xl text-encre">
               Je vous accompagne avant, pendant et après la reprise
             </h2>
@@ -132,7 +129,9 @@ export default function ReprendrePage() {
       <section className="bg-beige-clair/30 py-16">
         <div className="mx-auto max-w-3xl px-6">
           <RevealOnScroll>
-            <Eyebrow index="03">Une situation que j&apos;accompagne</Eyebrow>
+            <h2 className="uppercase text-xs">
+              Une situation que j&apos;accompagne
+            </h2>
             <div className="relative mt-4">
               <DecorativeBlob className="-right-6 -top-6 h-28 w-28 bg-dore/30" />
               <Card className="relative border-l-4 border-corail">

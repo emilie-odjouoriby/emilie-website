@@ -17,8 +17,8 @@ export function HeroSection() {
 
       <div className="relative mx-auto max-w-6xl px-6 pb-16 pt-20 md:pt-28">
         <RevealOnScroll className="max-w-3xl">
-          <Pill tone="beige">Juriste depuis 2007 · Coach certifiée ICF</Pill>
-          <h1 className="mt-6 font-display text-5xl leading-tight text-encre md:text-7xl">
+          <Pill tone="beige">Juriste pendant 18 ans · Coach certifiée ICF</Pill>
+          <h1 className="mt-6 font-display text-4xl leading-tight text-encre md:text-6xl">
             Céder, reprendre ou{" "}
             <span className="text-corail">mieux travailler</span> avec vos
             associés
