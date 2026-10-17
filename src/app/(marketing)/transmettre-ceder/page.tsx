@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { BulletList } from "@/components/ui/BulletList";
 import { DecorativeBlob } from "@/components/ui/DecorativeBlob";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 import { NumberedSteps } from "@/components/sections/NumberedSteps";
 import { PageCtaBanner } from "@/components/sections/PageCtaBanner";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
@@ -76,7 +75,6 @@ export default function TransmettreCederPage() {
       <section className="bg-beige-clair/30 py-16">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2">
           <RevealOnScroll>
-            <Eyebrow index="01">Vos blocages</Eyebrow>
             <h2 className="mt-4 font-display text-3xl text-encre">
               Qu&apos;est-ce qui vous empêche de passer à l&apos;action ?
             </h2>
@@ -103,8 +101,6 @@ export default function TransmettreCederPage() {
       </section>
 
       <NumberedSteps
-        eyebrowIndex="02"
-        eyebrowLabel="La méthode"
         heading="Comment se déroule l'accompagnement ?"
         steps={STEPS}
       />

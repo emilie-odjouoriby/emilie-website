@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { ROUTES } from "@/constants/routes";
 
@@ -38,11 +37,6 @@ export function ProfilesSection() {
   return (
     <section className="bg-beige-clair/30 py-20">
       <div className="mx-auto max-w-6xl px-6">
-        <RevealOnScroll>
-          <h2 className="sr-only">Votre situation</h2>
-          <Eyebrow index="01">Votre situation</Eyebrow>
-        </RevealOnScroll>
-
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {PROFILES.map((profile, index) => (
             <RevealOnScroll key={profile.href} delay={index * 0.1}>

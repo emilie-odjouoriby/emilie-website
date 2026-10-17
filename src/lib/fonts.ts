@@ -8,8 +8,11 @@ export const signatureFont = localFont({
   display: "swap",
 });
 
+// Cocomat Pro utilisée pour les titres ET le texte courant (retour d'Émilie : Holla
+// jugée moins lisible). --font-display pointe désormais vers le même fichier que
+// --font-body, aucun composant à modifier (la classe font-display reste valide).
 export const displayFont = localFont({
-  src: "../../public/fonts/HollaScript.woff2",
+  src: "../../public/fonts/CocomatPro-Regular.woff2",
   variable: "--font-display",
   weight: "400",
   display: "swap",

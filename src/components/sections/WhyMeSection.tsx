@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { DecorativeBlob } from "@/components/ui/DecorativeBlob";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import photo from "../../../public/photos/photo2.webp";
 
@@ -16,7 +15,6 @@ export function WhyMeSection() {
     <section id="pourquoi-moi" className="scroll-mt-24 bg-beige-clair/40 py-20">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-2 md:items-center">
         <RevealOnScroll>
-          <Eyebrow index="02">Pourquoi moi</Eyebrow>
           <h2 className="mt-4 font-display text-3xl text-encre">
             Pourquoi faire appel à <span className="text-corail">moi</span> ?
           </h2>

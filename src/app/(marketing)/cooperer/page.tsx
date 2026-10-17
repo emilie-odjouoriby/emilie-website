@@ -1,5 +1,4 @@
 import { DecorativeBlob } from "@/components/ui/DecorativeBlob";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 import { NumberedSteps } from "@/components/sections/NumberedSteps";
 import { PageCtaBanner } from "@/components/sections/PageCtaBanner";
 import { Pill } from "@/components/ui/Pill";
@@ -82,7 +81,6 @@ export default function CooperePage() {
       <section className="bg-beige-clair/30 py-16">
         <div className="mx-auto max-w-6xl px-6">
           <RevealOnScroll className="max-w-2xl">
-            <Eyebrow index="01">Vos sujets</Eyebrow>
             <h2 className="mt-4 font-display text-3xl text-encre">
               Je vous aide à remettre les sujets importants sur la table et à :
             </h2>
@@ -105,12 +103,7 @@ export default function CooperePage() {
         </div>
       </section>
 
-      <NumberedSteps
-        eyebrowIndex="02"
-        eyebrowLabel="Comment je vous accompagne"
-        heading="Le déroulé de l'accompagnement"
-        steps={STEPS}
-      />
+      <NumberedSteps heading="Le déroulé de l'accompagnement" steps={STEPS} />
 
       <PageCtaBanner
         buttonLabel="Parlons de votre situation entre associés"
