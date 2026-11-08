@@ -56,7 +56,7 @@ export function WhyMeSection() {
                 alt="Émilie Odjouoriby, juriste et coach professionnelle"
                 fill
                 sizes="(min-width: 768px) 40vw, 100vw"
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </div>
