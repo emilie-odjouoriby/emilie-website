@@ -93,7 +93,7 @@ export default function QuiSuisJePage() {
                 alt="Émilie Odjouoriby"
                 fill
                 sizes="(min-width: 768px) 40vw, 100vw"
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </RevealOnScroll>
