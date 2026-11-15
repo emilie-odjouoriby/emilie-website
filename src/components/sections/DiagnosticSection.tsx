@@ -29,8 +29,7 @@ export function DiagnosticSection() {
             En 20 minutes, gratuitement et sans engagement, faites un premier
             point sur sa transmissibilité.
           </p>
-          {/* Cible temporaire /contact — Phase 7 branchera le vrai formulaire de diagnostic ici. */}
-          <Button href={ROUTES.contact} className="mt-8">
+          <Button href={ROUTES.diagnostic} className="mt-8">
             Faire mon diagnostic gratuit
           </Button>
         </RevealOnScroll>

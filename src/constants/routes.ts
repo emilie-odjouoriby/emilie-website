@@ -5,7 +5,7 @@ export const ROUTES = {
   cooperer: "/cooperer",
   quiSuisJe: "/qui-suis-je",
   contact: "/contact",
-  diagnostic: "/#diagnostic",
+  diagnostic: "/diagnostic",
 } as const;
 
 export const NAV_LINKS = [
