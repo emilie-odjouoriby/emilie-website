@@ -6,6 +6,8 @@ export const ROUTES = {
   quiSuisJe: "/qui-suis-je",
   contact: "/contact",
   diagnostic: "/diagnostic",
+  mentionsLegales: "/mentions-legales",
+  politiqueConfidentialite: "/politique-de-confidentialite",
 } as const;
 
 export const NAV_LINKS = [
