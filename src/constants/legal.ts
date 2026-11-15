@@ -2,7 +2,7 @@
 // Les champs marqués PENDING_* sont en attente d'informations et doivent être
 // complétés avant que les mentions légales soient pleinement conformes.
 
-export const PENDING_INFO = "à compléter avec Émilie";
+export const PENDING_INFO = "à compléter";
 
 export const EDITOR = {
   name: "Émilie Odjouoriby",
