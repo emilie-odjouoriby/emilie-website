@@ -8,9 +8,9 @@ export const EDITOR = {
   name: "Émilie Odjouoriby",
   city: "Nantes, France",
   contactEmail: "eodjouoriby.coaching@gmail.com",
-  legalStatus: PENDING_INFO,
-  siret: PENDING_INFO,
-  vatNumber: PENDING_INFO,
+  legalStatus: "Entreprise individuelle",
+  siret: "990 001 372 00012",
+  vatNumber: "TVA non applicable",
 };
 
 export const HOST = {
