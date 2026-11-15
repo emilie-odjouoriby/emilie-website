@@ -10,6 +10,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ROUTES.cooperer,
     ROUTES.quiSuisJe,
     ROUTES.contact,
+    ROUTES.diagnostic,
+    ROUTES.mentionsLegales,
+    ROUTES.politiqueConfidentialite,
   ];
 
   return routes.map((route) => ({

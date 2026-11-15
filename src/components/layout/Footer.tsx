@@ -38,6 +38,17 @@ export function Footer() {
 
         <div className="flex flex-col gap-2 text-encre/70">
           <span>&copy; {year} Émilie Odjouoriby</span>
+          <nav aria-label="Mentions légales" className="flex gap-4 text-xs">
+            <Link href={ROUTES.mentionsLegales} className="hover:text-corail">
+              Mentions légales
+            </Link>
+            <Link
+              href={ROUTES.politiqueConfidentialite}
+              className="hover:text-corail"
+            >
+              Politique de confidentialité
+            </Link>
+          </nav>
         </div>
       </div>
     </footer>
